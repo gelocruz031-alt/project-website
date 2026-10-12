@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html">💡 Skills I'm Developing</a>
+                    <a href="goals.html">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <section id="section2"></section>
+
+    <!-- 🎠 IMAGE SLIDER -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="images/slide1.jpg" alt="Welcome">
+                <div class="text-overlay"><h1>Welcome to My Website! ✨</h1></div>
+            </div>
+            <div class="slide">
+                <img src="images/slide2.jpg" alt="Journey">
+                <div class="text-overlay"><h1>Discover My Journey 🚀</h1></div>
+            </div>
+            <div class="slide">
+                <img src="images/slide3.jpg" alt="Connect">
+                <div class="text-overlay"><h1>Let's Connect! 🤝</h1></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 😄 FUN FACTS TEASER -->
+    <section id="drop">
+        <h2>✨ Fun Facts About Me ✨</h2>
+        <p>Welcome to my personal space! Hover over the cards below to learn something new about me.</p>
+
+        <div class="funfact-container">
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">☕ Coffee Lover</div>
+                    <div class="funfact-back">Good coffee = Better code! ☕💻</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">💻 Passionate Coder</div>
+                    <div class="funfact-back">Turning ideas into reality, one line at a time!</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">🎵 Music Fan</div>
+                    <div class="funfact-back">Music fuels my creativity! 🎶✨</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">🌅 Dreamer</div>
+                    <div class="funfact-back">Every great dream starts with a step forward! 🚀</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="see-more-container">
+            <a href="funfacts.html" class="see-more-button">See More Fun Facts →</a>
+        </div>
+    </section>
+
+    <!-- 👋 ABOUT ME SECTION -->
+    <div class="container">
+        <div class="image-section">
+            <img src="images/profile.jpg" alt="My Photo">
+        </div>
+        <div class="quote-section">
+            <h1>Hi, I'm Angela Marie Dela Cruz! 👋</h1>
+            <p>I'm an Information Syetem student passionate about web development and design. I love creating beautiful, functional websites that make a difference in people's lives.</p>
+            <p>When I'm not coding, you can find me exploring new coffee shops, listening to music, or discovering something new that inspires me!</p>
+            <blockquote>"The only way to do great work is to love what you do." — Steve Jobs</blockquote>
+        </div>
+    </div>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goals — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html">💡 Skills I'm Developing</a>
+                    <a href="goals.html" style="color: #ff6600; font-weight: bold;">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>🎯 My Goals as a Student</h2>
+        <p>Click each card to see the details! ✨</p>
+
+        <div class="goal-grid">
+            <div class="goal-card" onclick="toggleGoal(this)">
+                <div class="goal-header">📚 Academic Goals</div>
+                <div class="goal-details">
+                    ✅ Maintain good grades in all subjects<br>
+                    ✅ Complete every project on time<br>
+                    ✅ Participate actively in class discussions<br>
+                    ✅ Learn something new every single day
+                </div>
+            </div>
+
+            <div class="goal-card" onclick="toggleGoal(this)">
+                <div class="goal-header">💻 Career Goals</div>
+                <div class="goal-details">
+                    ✅ Master at least 3 programming languages<br>
+                    ✅ Build my own portfolio website<br>
+                    ✅ Create projects that solve real problems<br>
+                    ✅ Work in a field I truly love and enjoy
+                </div>
+            </div>
+
+            <div class="goal-card" onclick="toggleGoal(this)">
+                <div class="goal-header">🌱 Personal Growth</div>
+                <div class="goal-details">
+                    ✅ Be more confident in my abilities<br>
+                    ✅ Stay consistent and disciplined<br>
+                    ✅ Ask for help when I need it<br>
+                    ✅ Never give up, even when it's hard 💪
+                </div>
+            </div>
+
+            <div class="goal-card" onclick="toggleGoal(this)">
+                <div class="goal-header">🏆 Long Term Dreams</div>
+                <div class="goal-details">
+                    ✅ Graduate with my degree<br>
+                    ✅ Make my family proud<br>
+                    ✅ Help others through what I learn<br>
+                    ✅ Build a life I'm happy to live ✨
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

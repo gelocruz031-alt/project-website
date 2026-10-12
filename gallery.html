@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html">💡 Skills I'm Developing</a>
+                    <a href="goals.html">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html" style="color: #ff6600; font-weight: bold;">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <section id="gallery">
+        <h2>📸 My Gallery</h2>
+        <p>Click any image to view it in full size! ✨</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/bonding.jpg" alt="Photo 1" class="thumbnail" onclick="openLightbox(0)">
+                <p class="image-description">✨ Bonding time with my couzin</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/study.jpg" alt="Photo 2" class="thumbnail" onclick="openLightbox(1)">
+                <p class="image-description">📚 Study Time HAHAHAH</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/view.jpg" alt="Photo 3" class="thumbnail" onclick="openLightbox(2)">
+                <p class="image-description">🌅 Beautiful View</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/friends.jpg" alt="Photo 4" class="thumbnail" onclick="openLightbox(3)">
+                <p class="image-description">🍻 Dringking sesion </p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/reconnecting.jpg" alt="Photo 5" class="thumbnail" onclick="openLightbox(4)">
+                <p class="image-description"> 🏞️💚 Reconnecting with Nature</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/trio.jpg" alt="Photo 6" class="thumbnail" onclick="openLightbox(5)">
+                <p class="image-description"> My kachikahan 👽 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔍 LIGHTBOX MODAL -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <span class="prev" onclick="event.stopPropagation(); changeImage(-1)">&#10094;</span>
+        <img class="lightbox-content" id="lightboxImage">
+        <span class="next" onclick="event.stopPropagation(); changeImage(1)">&#10095;</span>
+    </div>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

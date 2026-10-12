@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html" style="color: #ff6600; font-weight: bold;">💡 Skills I'm Developing</a>
+                    <a href="goals.html">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <section id="skills">
+        <h2>💡 Skills I'm Developing</h2>
+        <p>Click the tabs below to explore what I'm learning! 🚀</p>
+
+        <div class="tab">
+            <button class="tablinks active" onclick="openTab(event, 'Tech')">💻 Technical</button>
+            <button class="tablinks" onclick="openTab(event, 'Soft')">🤝 Soft Skills</button>
+            <button class="tablinks" onclick="openTab(event, 'Tools')">🛠️ Tools</button>
+        </div>
+
+        <div id="Tech" class="tabcontent active">
+            <h3>💻 Technical Skills</h3>
+            <ul>
+                <li>✅ HTML5 & CSS3 — Building beautiful, responsive websites</li>
+                <li>✅ JavaScript — Adding interactivity to web pages</li>
+                <li>✅ Python — Programming and problem solving</li>
+                <li>✅ Database Basics — Learning how to store and manage data</li>
+                <li>✅ Basic Networking — Understanding how the internet works</li>
+            </ul>
+        </div>
+
+        <div id="Soft" class="tabcontent">
+            <h3>🤝 Soft Skills</h3>
+            <ul>
+                <li>🌟 Teamwork — Working well with others toward a common goal</li>
+                <li>🌟 Communication — Expressing ideas clearly and listening well</li>
+                <li>🌟 Time Management — Balancing school, projects, and rest</li>
+                <li>🌟 Adaptability — Willing to learn new things quickly</li>
+                <li>🌟 Problem Solving — Finding solutions when things get tricky</li>
+            </ul>
+        </div>
+
+        <div id="Tools" class="tabcontent">
+            <h3>🛠️ Tools I Use</h3>
+            <ul>
+                <li>🔧 VS Code — My favorite code editor</li>
+                <li>🔧 Canva — For quick designs and presentations</li>
+                <li>🔧 Google Drive — Keeping files safe and organized</li>
+                <li>🔧 GitHub — Saving and sharing my code projects</li>
+                <li>🔧 Trello — Planning and tracking my tasks</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

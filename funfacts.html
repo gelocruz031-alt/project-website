@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts — My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ Welcome to My Personal Website ✨</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">🏠 HOME</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">ABOUT ▾</a>
+                <div class="dropdown-content">
+                    <a href="skills.html">💡 Skills I'm Developing</a>
+                    <a href="goals.html">🎯 My Goals as a Student</a>
+                    <a href="funfacts.html" style="color: #ff6600; font-weight: bold;">😄 Fun Facts About Me</a>
+                </div>
+            </li>
+            <li><a href="gallery.html">📸 GALLERY</a></li>
+            <li><a href="contact.html">✉️ CONTACT</a></li>
+            <li><button class="logout-button" onclick="confirmLogout()">🚪 LOGOUT</button></li>
+        </ul>
+    </nav>
+
+    <section class="funfacts-section">
+        <h2>😄 Fun Facts About Me</h2>
+        <p>✨ Hover over the cards to flip them!</p>
+
+        <div class="funfact-container">
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">☕ Coffee Lover</div>
+                    <div class="funfact-back">Good coffee = Better code! ☕💻</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">💻 Passionate Coder</div>
+                    <div class="funfact-back">Turning ideas into reality, one line at a time!</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">🎵 Music Fan</div>
+                    <div class="funfact-back">Music fuels my creativity! 🎶✨</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">📖 Book Lover</div>
+                    <div class="funfact-back">Reading opens doors to new worlds! 📚🌍</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">🌅 Early Bird</div>
+                    <div class="funfact-back">Best ideas come in the morning! ☀️</div>
+                </div>
+            </div>
+            <div class="funfact-card">
+                <div class="funfact-inner">
+                    <div class="funfact-front">🚀 Always Learning</div>
+                    <div class="funfact-back">Growth happens outside the comfort zone! ✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>✨ Made with love — © 2026 Angela. All rights reserved. ✨</p>
+        <div class="footer-divider"></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
